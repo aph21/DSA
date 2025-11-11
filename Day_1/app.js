@@ -45,8 +45,22 @@ const prompt = require("prompt-sync")()
 // console.log("a and b after swapping: ", a, b);
 
 //Method 3: using destructuring assignment
-let a = Number(prompt("Enter a:"));
-let b = Number(prompt("Enter b:"))
-console.log("a and b before swapping: ", a, b);
-[a, b] = [b, a];
-console.log("a and b after swapping: ", a, b);
+// let a = Number(prompt("Enter a:"));
+// let b = Number(prompt("Enter b:"))
+// console.log("a and b before swapping: ", a, b);
+// [a, b] = [b, a];
+// console.log("a and b after swapping: ", a, b);
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//3. Check if a number is even or odd
+//Method 1: using % operator 
+
+let n = Number(prompt("Enter a number:"));
+
+if(n % 2 === 0) {
+    console.log(`${n} is Even Number`);
+}else {
+    console.log(`${n} is Odd Number`)
+}
