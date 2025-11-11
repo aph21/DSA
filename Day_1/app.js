@@ -36,10 +36,17 @@ const prompt = require("prompt-sync")()
 
 //Method 2: using bitwise XOR operator
 
+// let a = Number(prompt("Enter a:"));
+// let b = Number(prompt("Enter b:"))
+// console.log("a and b before swapping: ", a, b);
+// a = a ^ b;
+// b = a ^ b;
+// a = a ^ b;
+// console.log("a and b after swapping: ", a, b);
+
+//Method 3: using destructuring assignment
 let a = Number(prompt("Enter a:"));
 let b = Number(prompt("Enter b:"))
 console.log("a and b before swapping: ", a, b);
-a = a ^ b;
-b = a ^ b;
-a = a ^ b;
+[a, b] = [b, a];
 console.log("a and b after swapping: ", a, b);
